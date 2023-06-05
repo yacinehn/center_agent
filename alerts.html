@@ -6,15 +6,16 @@
   <link rel="stylesheet" href="styles.css">
 </head>
 <body>
-  <h1>Alerts</h1>
+  <div class="banner2">
+  <h1 class="txt">Alerts</h1>
   <table id="alerts-table">
-    <tr>
+    <tr class="header">
       <th>Alert</th>
       <th>Details</th>
       <th>Action</th>
     </tr>
   </table>
-  <button onclick="navigateTo('declaration.html')" id="btn"> Declarations </button>
+  <button class="Rtr" onclick="navigateTo('declaration.html')" id="btn"> Declarations </button>
 
   <script src="https://www.gstatic.com/firebasejs/8.10.0/firebase-app.js"></script>
   <script src="https://www.gstatic.com/firebasejs/8.10.0/firebase-database.js"></script>
@@ -97,5 +98,6 @@
     // Call the generateAlertsTable function to populate the table on page load
     window.addEventListener("load", generateAlertsTable);
   </script>
+  </div>
 </body>
 </html>
